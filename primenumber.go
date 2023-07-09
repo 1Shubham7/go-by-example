@@ -13,11 +13,11 @@ func main() {
 }
 
 func isPrime(number int) bool {
-	var prime int
+	// var prime int
 	for i:=2; i<number; i++ {
-		if (number/i == 0){
-			prime = 0
-			break
-		} 
+		if number%i == 0 {
+			return false
+		}
 	}
+	return true
 }
